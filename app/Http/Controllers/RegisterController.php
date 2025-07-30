@@ -20,13 +20,13 @@ class RegisterController extends Controller
 
         $user = User::create($request->validated());
 
-        if ($user->avtar) {
+        if ($user->avatar) {
 
-        $file = $request->file('avtar');
+        $file = $request->file('avatar');
 
         $path = Storage::disk('public')
             ->putFileAs(
-                'avtars',
+                'avatars',
                 $file,
                 $user->id . '.' . $file->getClientOriginalExtension()
             );
@@ -34,7 +34,7 @@ class RegisterController extends Controller
             $path = null;
         }
 
-        $user->avtar = $path;
+        $user->avatar = $path;
         $user->save();
 
         Auth::login($user, true);

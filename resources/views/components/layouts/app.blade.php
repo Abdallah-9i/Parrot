@@ -25,8 +25,8 @@
         aria-expanded="false" aria-label="Dropdown">
         <div class="avatar">
         <div class="size-9.5 rounded-full">
-          @if (Auth::user()->avtar)
-          <img src="/storage/{{ Auth::user()->avtar }}" alt="avatar" />
+          @if (Auth::user()->avatar)
+          <img src="/storage/{{ Auth::user()->avatar }}" alt="avatar" />
           @else
           <img src="/images/default.jpg" alt="avatar" />
 
@@ -41,8 +41,8 @@
         <div class="avatar">
           <div class="w-10 rounded-full">
 
-           @if (Auth::user()->avtar)
-          <img src="/storage/{{ Auth::user()->avtar }}" alt="avatar" />
+           @if (Auth::user()->avatar)
+          <img src="/storage/{{ Auth::user()->avatar }}" alt="avatar" />
           @else
           <img src="/images/default.jpg" alt="avatar" />
 

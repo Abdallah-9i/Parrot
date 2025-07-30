@@ -29,8 +29,8 @@
             </div>
             <div class="avatar">
                 <div class="size-8 rounded-full">
-                     @if ($tweet->user->avtar)
-                        <img src="/storage/{{ $tweet->user->avtar }}" alt="avatar"/>
+                     @if ($tweet->user->avatar)
+                        <img src="/storage/{{ $tweet->user->avatar }}" alt="avatar"/>
                      @else
                         <img src="/images/default.jpg" alt="avatar" />
                      @endif

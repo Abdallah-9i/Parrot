@@ -4,10 +4,10 @@
         @csrf
 
         <div class="max-w-sm input-floating">
-            <input type="file" accept="image/*" class="input" id="avtar" name="avtar" />
-            <label class="input-floating-label" for="avtar">avtar</label>
+            <input type="file" accept="image/*" class="input" id="avatar" name="avatar" />
+            <label class="input-floating-label" for="avatar">avatar</label>
 
-            @error('avtar')
+            @error('avatar')
                 <div class="text-sm text-red-500 mt-1">{{ $message }}</div>
             @enderror
         </div>

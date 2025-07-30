@@ -6,8 +6,8 @@
       <div class="card-header text-center">
         <div class="avatar mb-3">
           <div class="w-34 h-34 rounded-full overflow-hidden mx-auto">
-            @if ($user->avtar)
-        <img src="/storage/{{ $user->avtar }}" alt="avatar" />
+            @if ($user->avatar)
+        <img src="/storage/{{ $user->avatar }}" alt="avatar" />
       @else
         <img src="/images/default.jpg" alt="avatar" />
       @endif
